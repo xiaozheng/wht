@@ -1,0 +1,7 @@
+*~
+*.swp
+wp-content/uploads
+wp-config.php
+wp-content/Gallery
+old
+tl

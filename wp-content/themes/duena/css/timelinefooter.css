@@ -1,0 +1,12 @@
+#tl-slider-scale-holder{overflow:hidden;height:52px;width:100%;position:absolute;top:0;left:0;cursor:crosshair}
+#tl-slider-scale{width:150%;height:52px;display:block;position:absolute;top:0;left:0;cursor:crosshair}
+#tl-slider-scale canvas.tl-scale-canvas{position:absolute;top:0;left:0;height:52px}
+#tl-slider-dragger{width:150px;position:absolute;height:77px;top:-12px;left:0;cursor:move}
+#tl-slider-dragger .tlsd-inner{width:100%;height:52px;position:relative;top:8px;left:8px;border:#999 solid 4px;-moz-border-radius:5px;border-radius:5px;-moz-box-shadow:0 0 5px #000;-webkit-box-shadow:0 0 5px #000;box-shadow:0 0 5px #000;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box}
+#tl-slider-dragger .tlsd-inner-inner{margin:0;height:52px;position:relative;background:url(/assets/ui/slider/dragger-gradient.png) left center repeat-x;-moz-box-shadow:inset 0 0 10px #000000;-webkit-box-shadow:inset 0 0 10px #000000;box-shadow:inset 0 0 10px #000000;opacity:0.8}
+#tl-slider-dragger .tlsd-corner{height:1px;width:1px;line-height:0;font-size:0;position:absolute;background:#999;opacity:0.75}
+#tl-slider-dragger .tlsd-c-tl{top:0;left:0}
+#tl-slider-dragger .tlsd-c-tr{top:0;right:0}
+#tl-slider-dragger .tlsd-c-bl{bottom:0;left:0}
+#tl-slider-dragger .tlsd-c-br{bottom:0;right:0}
+#tl-slider-scale-times-holder{position:absolute;left:0;top:0;width:100%;overflow:hidden;height:40px;overflow:hidden;cursor:crosshair}

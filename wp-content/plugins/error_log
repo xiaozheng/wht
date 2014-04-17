@@ -1,0 +1,1 @@
+[11-Apr-2014 00:48:29] PHP Fatal error:  Call to undefined function  add_action() in /home3/zhanxiao/public_html/weihuayesweihua/tl/wp-content/plugins/hello.php on line 60

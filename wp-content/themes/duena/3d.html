@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html style="background-color: rgb(0, 0, 0);" xmlns="http://www.w3.org/1999/xhtml"><head>
+		<title>Beautiful web-based timeline software</title>
+		<meta name="google-site-verification" content="SRLb0CGRqhnQSXXmnDuvC42rLvvkPqHfFj-3TCZA_xY">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Welcome to TikiToki, a web app that makes it dead easy to make stunning, animated timelines that work in your browser. Our basic account is completely free.">
+		<meta name="keywords" content="time">
+		<meta name="author" content="timeline">
+		<meta name="copyright" content="Designed and built by Webalon in London, England.">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+				<meta http-equiv="X-UA-Compatible" content="IE=7, IE=9">
+				<meta http-equiv="imagetoolbar" content="no">
+		<meta name="MSSmartTagsPreventParsing" content="true">
+		<link rel="icon" href="http://www.tiki-toki.com/assets/ui/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="Beautiful%20web-based%20timeline%20software_files/latest.css" type="text/css" media="screen">
+				<link rel="stylesheet" href="Beautiful%20web-based%20timeline%20software_files/user-controls.css" type="text/css" media="screen">
+						<!--[if IE 6]><link type="text/css" rel="stylesheet" href="/assets/css/screen.ie6.css?version=7.061" /><![endif]-->
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/assets/css/screen.ie7.css?version=7.061" /><![endif]-->
+		<!--[if IE 8]><link type="text/css" rel="stylesheet" href="/assets/css/screen.ie8.css?version=7.061" /><![endif]-->
+		<!--[if IE 9]><link type="text/css" rel="stylesheet" href="/assets/css/screen.ie9.css?version=7.061" /><![endif]-->
+						<!--[if IE]><script type="text/javascript" src="/assets/js/excanvas.compiled.js"></script><![endif]-->
+							<script src="Beautiful%20web-based%20timeline%20software_files/ga.js" async="" type="text/javascript"></script><script style="color: rgb(0, 0, 0);" type="text/javascript" src="Beautiful%20web-based%20timeline%20software_files/user-controls.js"></script>
+				<script type="text/javascript" src="Beautiful%20web-based%20timeline%20software_files/support.js"></script>
+		<script type="text/javascript" src="Beautiful%20web-based%20timeline%20software_files/latest.js"></script>
+								
+		
+		
+	<style id="tl-duration-story-text-style" type="text/css"> .tl-sb-duration-story .tl-sb-headline, .tl-sb-duration-story .tl-sb-date { color: #ffffff !important; } .tl-sb-duration-story .tl-sb-image-gallery { border-color: #ffffff !important; } </style></head>
+		
+	<body class="">
+		<script type="text/javascript">$("body").removeClass("tl-non-js-styles");</script>
+			
+	
+		<div id="console"></div>
+		<div style="background-color: rgb(0, 0, 0);" class="browser-type-firefox" id="tl-container">
+			
+			<div id="tl-image-preloader">
+				<img src="Beautiful%20web-based%20timeline%20software_files/black-opacity-95.png" alt="">
+
+				
+			</div>
+			
+			<div class="tl-timeline-info">
+				
+				<p class="tl-ah-about-text"></p>
+				
+						</div>
+			
+			<div style="background-color: rgb(26, 26, 26); height: 578px;" id="tl-stage-holder" class="tl-font tl-page-size-normal-height"><img style="width: 1626.25px; height: 1016.25px; top: -219px; left: 0px;" src="Beautiful%20web-based%20timeline%20software_files/tiki-toki17.jpg" alt="" id="tl-stage-image">
+				<!--<img src="/assets/ui/empty-image2.gif" alt="" id="tl-stage-image" />-->
+				<div id="tl-stage-main-photo-credit">Photo credit: <a href="http://www.dubbelklikdesign.nl/">G Schouten de Jel</a></div>
+				<div id="tl-stage-scale-blackener"></div>
+				
+				<canvas style="display: none; width: 1301px; height: 578px;" id="tl-3d-view-canvas" width="1301" height="578"></canvas>
+
+				<div style="display: block;" id="tl-stage-date-displayer"></div>
+				<div class="tl-stage-border-top"></div>
+				<div class="tl-stage-border-bottom"></div>
+				
+				
+				
+
+<div style="display: block;" id="tl-uc-controls">
+
+	<div id="tl-uc-panel">
+		
+		<div class="tl-ucp-bottom-right">
+			<div class="tl-ucp-bottom-left"></div>
+		</div>
+	</div>
+
+	
+	
+</div>			
+				
+				<a style="display: block;" href="#" id="tl-timeline-3d-launch">3d</a>
+			
+				
+			
+			</div>
+			<div style="border-bottom-color: rgb(40, 40, 40); border-top-color: rgb(40, 40, 40); visibility: visible;" id="tl-slider-holder" class="tl-font">
+				<div id="tl-slider-scale-holder">
+					<div style="width: 1951.5px; left: 0px;" id="tl-slider-scale">
+						<canvas style="background-color: rgb(0, 0, 0); width: 1951.5px;" class="tl-scale-canvas"></canvas>
+					
+						<div id="tl-slider-markers-holder">
+						
+				</div>
+				<div style="width: 172px; left: 0px;" id="tl-slider-dragger">
+					<div style="width: 148px; border-color: rgb(128, 128, 128);" class="tlsd-inner">
+						<div class="tlsd-inner-inner">
+							<div style="background-color: rgb(128, 128, 128);" class="tlsd-corner tlsd-c-tl"></div>
+							<div style="background-color: rgb(128, 128, 128);" class="tlsd-corner tlsd-c-tr"></div>
+							<div style="background-color: rgb(128, 128, 128);" class="tlsd-corner tlsd-c-bl"></div>
+							<div style="background-color: rgb(128, 128, 128);" class="tlsd-corner tlsd-c-br"></div>
+						</div>				
+					</div>
+				</div>
+				<div id="tl-slider-interaction-preventer"></div>
+			</div>
+			<div id="tl-footer"></div>
+
+		
+						
+		
+			<script type="text/javascript">
+var TLTimelineData = {
+	host: "www.tiki-toki.com",
+	homePage: false, 
+	showAdBlock: "false", 
+	id:43,
+	title:"Beautiful web-based timeline software",
+	urlFriendlyTitle:"Beautiful-web-based-timeline-software",
+	startDate:"2010-08-01 00:00:00",
+	endDate:"2011-03-30 00:00:00",
+	introText:"Welcome to TikiToki, a web app that makes it dead easy to make stunning, animated timelines that work in your browser. Our basic account is completely free.",
+	introImage:"",
+	authorName:"Alex Kearns",
+	"accountType":"Teacher",
+	backgroundImage:"/assets/images/tiki-toki17.jpg",
+	introImageCredit:"",
+	backgroundImageCredit:"Photo credit: <a href=\"http://www.dubbelklikdesign.nl/\">G Schouten de Jel</a>",
+	feed: "",
+	mainColour: "c72066",
+	zoom: "month-small-day",
+	initialFocus: "39",
+	embedHash: "9085373548",
+	embed: "false",
+	secret: "false",
+	public: "yes",
+	dontDisplayIntroPanel: 1,
+	openReadMoreLinks: 0,
+	storyDateStatus: 0,
+	storySpacing: 0,
+	viewType: 0,
+	showTitleBlock: 0,
+	backgroundColour: "1a1a1a",
+	storyDateFormat: "auto",
+	topDateFormat: "auto",
+	sliderDateFormat: "auto",
+	language: "english",
+	displayStripes: 1,
+	htmlFormatting: 0,
+	sliderBackgroundColour: "000000",
+	sliderTextColour: "808080",
+	sliderDetailsColour: "282828",
+	sliderDraggerColour: "808080",
+	headerBackgroundColour: "000000",
+	headerTextColour: "808080",
+	showGroupAuthorNames: "1",
+	durHeadlineColour: "ffffff",
+	cssFile: "",
+	altFlickrImageUrl: "http://www.tikitokiservices.com/timelines/43/",
+	fontBase: 'default',
+	fontHead: 'default',
+	fontBody: 'default',
+	lightboxStyle: '0',
+	showControls: '1',
+	lazyLoading: '0',
+	protection: "",
+	expander: "2",
+	copyable: "0",
+	settings3d: "1,FFFFFF,0.6432,1050,0.1125,1.25,1,3",
+	bgStyle: 1,
+	bgScale: 125,
+	categories:[{
+		id:11,
+		title:"About",
+		colour:"386cd2",
+		"layout":"0",
+		"rows":"3",
+		"order":"10",
+		"size":"15"
+	},{
+		id:14,
+		title:"New feature",
+		colour:"1DA364",
+		"layout":"0",
+		"rows":"3",
+		"order":"10",
+		"size":"10"
+	},{
+		id:13,
+		title:"Progress",
+		colour:"c72066",
+		"layout":"0",
+		"rows":"3",
+		"order":"10",
+		"size":"10"
+	},{
+		id:74,
+		title:"Sample timeline",
+		colour:"C26516",
+		"layout":"0",
+		"rows":"3",
+		"order":"10",
+		"size":"10"
+	},{
+		id:75,
+		title:"Technical",
+		colour:"A7299B",
+		"layout":"0",
+		"rows":"3",
+		"order":"10",
+		"size":"10"
+	}],			
+	feeds:[],			
+	stories:[{
+		id:39,
+		ownerId:"",
+		ownerName:"",
+		title:"We had an idea",
+		startDate:"2010-08-06 12:35:41",
+		endDate:"2010-08-06 12:35:41",
+		text:"Wouldn't it be great, we thought, if there was some software available that was so easy to use that anyone could quickly create their own interactive timelines.",
+		fullText:"",
+		category:"11",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:48,
+			src:"/assets/images/tiki-toki-images/clock1.jpg",
+			caption:"Photo credit: Chris Gilbert",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:40,
+		ownerId:"",
+		ownerName:"",
+		title:"Getting ready for launch",
+		startDate:"2011-03-10 00:00:00",
+		endDate:"2011-03-10 00:00:00",
+		text:"We are beginning to get excited. Development work on TikiToki timeline software has finished. All but the most minor bugs have been sorted. All we need to do now is work up some marketing material and we'll be ready to launch. Wish us luck!",
+		fullText:"none",
+		category:"13",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[]				
+	},{
+		id:951,
+		ownerId:"",
+		ownerName:"",
+		title:"Timeline of the Arab uprisings",
+		startDate:"2011-02-15 00:00:00",
+		endDate:"2011-02-15 00:00:00",
+		text:"One of the things we hope our timeline software will be used for is to document events of great historic importance such as the revolutions taking place in the Arab world.",
+		fullText:"",
+		category:"74",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:732,
+			src:"http://farm6.static.flickr.com/5012/5509662517_6827ce704e_m.jpg",
+			caption:"Photo credit: <a href=\"http://www.flickr.com/people/32834977@N03/\">Al Jazeera English</a>",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:42,
+		ownerId:"",
+		ownerName:"",
+		title:"Colour customisation",
+		startDate:"2010-12-01 02:41:21",
+		endDate:"2010-08-03 02:41:21",
+		text:"You can now customise the colour scheme of your timeline. There is now no excuse for having clashing colours on your timeline.",
+		fullText:"",
+		category:"14",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:695,
+			src:"/assets/images/tiki-toki-images/timeline-markers.jpg",
+			caption:"Photo credit: <a href=\"http://www.flickr.com/people/52701047@N06/\">Eve M</a>",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:771,
+		ownerId:"",
+		ownerName:"",
+		title:"Add videos to your stories",
+		startDate:"2010-11-10 00:00:00",
+		endDate:"2010-08-02 05:39:29",
+		text:"We have made it possible for users to easily add Vimeo and YouTube videos to their stories. No excuse for having boring timelines now!",
+		fullText:"",
+		category:"14",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:693,
+			src:"http://vimeo.com/18008261",
+			caption:"Vimeo hosts some brilliant videos",
+			type:"Video",
+			thumbPosition:"0,0",
+			externalMediaThumb:"http://b.vimeocdn.com/ts/126/023/126023542_640.jpg",
+			externalMediaType:"vimeo",
+			externalMediaId:"18008261",
+			orderIndex: 4
+		},{
+			id:694,
+			src:"http://vimeo.com/19131028",
+			caption:"",
+			type:"Video",
+			thumbPosition:"0,0",
+			externalMediaThumb:"http://b.vimeocdn.com/ts/120/991/120991424_640.jpg",
+			externalMediaType:"vimeo",
+			externalMediaId:"19131028",
+			orderIndex: 5
+		},{
+			id:696,
+			src:"http://vimeo.com/19475041",
+			caption:"",
+			type:"Video",
+			thumbPosition:"0,0",
+			externalMediaThumb:"http://b.vimeocdn.com/ts/123/500/123500999_640.jpg",
+			externalMediaType:"vimeo",
+			externalMediaId:"19475041",
+			orderIndex: 5
+		},{
+			id:709,
+			src:"http://vimeo.com/20079854",
+			caption:"",
+			type:"Video",
+			thumbPosition:"0,0",
+			externalMediaThumb:"http://b.vimeocdn.com/ts/128/562/128562369_640.jpg",
+			externalMediaType:"vimeo",
+			externalMediaId:"20079854",
+			orderIndex: 5
+		},{
+			id:699,
+			src:"http://vimeo.com/20061744",
+			caption:"",
+			type:"Video",
+			thumbPosition:"0,0",
+			externalMediaThumb:"http://b.vimeocdn.com/ts/128/142/128142050_640.jpg",
+			externalMediaType:"vimeo",
+			externalMediaId:"20061744",
+			orderIndex: 10
+		},{
+			id:700,
+			src:"http://vimeo.com/20160395",
+			caption:"",
+			type:"Video",
+			thumbPosition:"0,0",
+			externalMediaThumb:"http://b.vimeocdn.com/ts/128/548/128548463_640.jpg",
+			externalMediaType:"vimeo",
+			externalMediaId:"20160395",
+			orderIndex: 10
+		},{
+			id:701,
+			src:"http://vimeo.com/20102494",
+			caption:"",
+			type:"Video",
+			thumbPosition:"0,0",
+			externalMediaThumb:"http://b.vimeocdn.com/ts/128/123/128123813_640.jpg",
+			externalMediaType:"vimeo",
+			externalMediaId:"20102494",
+			orderIndex: 10
+		},{
+			id:708,
+			src:"http://vimeo.com/20207242",
+			caption:"",
+			type:"Video",
+			thumbPosition:"0,0",
+			externalMediaThumb:"http://b.vimeocdn.com/ts/128/888/128888720_640.jpg",
+			externalMediaType:"vimeo",
+			externalMediaId:"20207242",
+			orderIndex: 10
+		}]				
+	},{
+		id:950,
+		ownerId:"",
+		ownerName:"",
+		title:"Mother's a little helper",
+		startDate:"2011-03-01 00:00:00",
+		endDate:"2011-03-01 00:00:00",
+		text:"When you have a budget smaller than a gnat's nether regions, you sometimes have to rely on family and friends to help you out.",
+		fullText:"",
+		category:"74",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:811,
+			src:"http://d8lktyzx0qqvd.cloudfront.net/timelines/67/5485517156_19b8297b49_m.jpg",
+			caption:"Photo credit: <a href=\"http://www.flickr.com/people/36143795@N07/\">marygaykearns</a>",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 1
+		},{
+			id:731,
+			src:"http://d8lktyzx0qqvd.cloudfront.net/timelines/67/5484921017_29983758fb_m.jpg",
+			caption:"My mother has used her timeline to showcase some of her paintings.",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		},{
+			id:808,
+			src:"http://d8lktyzx0qqvd.cloudfront.net/timelines/67/3340434557_9a54722ec7_m.jpg",
+			caption:"Photo credit: <a href=\"http://www.flickr.com/people/36143795@N07/\">marygaykearns</a>",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		},{
+			id:809,
+			src:"http://d8lktyzx0qqvd.cloudfront.net/timelines/67/3467483081_a805bd0076_m.jpg",
+			caption:"Photo credit: <a href=\"http://www.flickr.com/people/36143795@N07/\">marygaykearns</a>",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		},{
+			id:810,
+			src:"http://d8lktyzx0qqvd.cloudfront.net/timelines/67/3468296614_9df7b84498_m.jpg",
+			caption:"Photo credit: <a href=\"http://www.flickr.com/people/36143795@N07/\">marygaykearns</a>",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:952,
+		ownerId:"",
+		ownerName:"",
+		title:"Flash or Javascript?",
+		startDate:"2010-08-08 05:15:26",
+		endDate:"2010-08-08 05:15:26",
+		text:"When you start out on a new software project, one of the first decisions you have to make is what technologies to use.",
+		fullText:"",
+		category:"75",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[]				
+	},{
+		id:953,
+		ownerId:"",
+		ownerName:"",
+		title:"What is this?",
+		startDate:"2010-08-01 00:00:00",
+		endDate:"2010-08-01 00:00:00",
+		text:"This is an interactive timeline created using TikiToki timeline software. The timeline tells the story of how TikiToki was created, from the initial concept to launch of the software.",
+		fullText:"",
+		category:"11",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:733,
+			src:"/assets/images/tiki-toki-images/timeline-markers.jpg",
+			caption:"",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:967,
+		ownerId:"",
+		ownerName:"",
+		title:"Embeddable timelines",
+		startDate:"2011-01-02 00:00:00",
+		endDate:"2010-08-06 12:35:41",
+		text:"We have just provided some great new functionality to our timeline software. People will now be able to embed smaller versions of their timelines on their blogs or websites.",
+		fullText:"",
+		category:"14",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:807,
+			src:"/assets/images/tiki-toki-images/embed.jpg",
+			caption:"",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:968,
+		ownerId:"",
+		ownerName:"",
+		title:"iFrame mouse-up dilemma",
+		startDate:"2011-01-08 19:10:30",
+		endDate:"2011-01-05 19:10:30",
+		text:"One of the issues with using iFrames to embed TikiToki timelines on other sites is that iFrames do not detect mouse-up events that occur on the parent page.",
+		fullText:"",
+		category:"75",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[]				
+	},{
+		id:969,
+		ownerId:"",
+		ownerName:"",
+		title:"Working prototype",
+		startDate:"2010-08-31 12:20:18",
+		endDate:"2010-08-31 12:20:18",
+		text:"In what seems like no time, we have managed to get a working prototype of our timeline software up and running.",
+		fullText:"",
+		category:"13",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[]				
+	},{
+		id:970,
+		ownerId:"",
+		ownerName:"",
+		title:"Unique selling points",
+		startDate:"2011-02-02 19:03:07",
+		endDate:"2011-02-02 19:03:07",
+		text:"As we get closer to launching the software, we have started to think about how TikiToki timeline software differentiates itself from the competition.",
+		fullText:"",
+		category:"11",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[]				
+	},{
+		id:971,
+		ownerId:"",
+		ownerName:"",
+		title:"Our target audience",
+		startDate:"2010-08-20 23:36:44",
+		endDate:"2010-08-20 23:36:44",
+		text:"There are loads of people who we believe  could benefit from our timeline software. So here's who we hope will use TikiToki once it is released.",
+		fullText:"",
+		category:"11",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:814,
+			src:"http://farm6.static.flickr.com/5132/5490145281_b94b1c0ebb_m.jpg",
+			caption:"Photo credit: <a href=\"http://www.flickr.com/people/57446193@N03/\">Byron Burke</a>",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:972,
+		ownerId:"",
+		ownerName:"",
+		title:"Resize the window!",
+		startDate:"2010-09-11 18:17:46",
+		endDate:"2010-09-11 18:17:46",
+		text:"Go on. Resize your browser window. We hope you are impressed. TikiToki timeline software is designed to work with a wide range of window sizes, from small netbook screens to giant displays.",
+		fullText:"none",
+		category:"14",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:815,
+			src:"/assets/images/tiki-toki-images/resize.jpg",
+			caption:"",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:973,
+		ownerId:"",
+		ownerName:"",
+		title:"Change background image",
+		startDate:"2010-10-14 13:11:39",
+		endDate:"2010-10-14 13:11:39",
+		text:"There is no better way of giving a timeline a unique appearance than through the use of a background image. Our timeline CMS now allows users to choose a background image of their own.",
+		fullText:"none",
+		category:"14",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:812,
+			src:"/assets/images/tiki-toki-images/background-image.jpg",
+			caption:"",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:974,
+		ownerId:"",
+		ownerName:"",
+		title:"Starting on the CMS",
+		startDate:"2010-09-30 21:47:55",
+		endDate:"2010-09-30 21:47:55",
+		text:"We have done a lot of good work on getting the core timeline part of the project working nicely. But that is only one part of the story. ",
+		fullText:"",
+		category:"13",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[]				
+	},{
+		id:975,
+		ownerId:"",
+		ownerName:"",
+		title:"New popup panel design",
+		startDate:"2010-12-17 04:02:23",
+		endDate:"2010-12-17 04:02:23",
+		text:"We are perfectionists when it comes to design. And if something is not working, we will redesign it multiple times until we finally get it right.",
+		fullText:"",
+		category:"13",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[{
+			id:813,
+			src:"/assets/images/tiki-toki-images/panel.jpg",
+			caption:"",
+			type:"Image",
+			thumbPosition:"0,0",
+			externalMediaThumb:"",
+			externalMediaType:"",
+			externalMediaId:"",
+			orderIndex: 10
+		}]				
+	},{
+		id:977,
+		ownerId:"",
+		ownerName:"",
+		title:"Flickr image selector",
+		startDate:"2010-10-28 06:22:04",
+		endDate:"2010-10-28 06:22:04",
+		text:"Flickr is undoubtedly the best photo sharing site on the web, and TikiToki now provides integration with it via our new Flickr image selector widget.",
+		fullText:"none",
+		category:"14",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[]				
+	},{
+		id:3572,
+		ownerId:"",
+		ownerName:"",
+		title:"We've launched!",
+		startDate:"2011-03-12 00:00:00",
+		endDate:"2011-03-10 17:15:15",
+		text:"Hurrah! We have launched tiki-toki.com to the world. Initial signs are good. People seem to love the software. We've also had a good bit of coverage on blogs and news sites. ",
+		fullText:"",
+		category:"13",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[]				
+	},{
+		id:533842,
+		ownerId:"19",
+		ownerName:"",
+		title:"The future",
+		startDate:"2011-03-22 22:04:54",
+		endDate:"2011-03-22 22:04:54",
+		text:"We are delighted to discover that people love Tiki-Toki. Loads or people have signed up and created great looking timelines.",
+		fullText:"",
+		category:"11",
+		dateFormat: "auto",
+		externalLink:"",
+		media:[]				
+	}]
+}
+</script> 					
+
+
+	
+</body></html>
