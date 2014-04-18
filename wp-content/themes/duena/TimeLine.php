@@ -7,7 +7,6 @@
 <!--[if IE 9]><link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/3dblog/3d_related_files/css/ie9.css" /><![endif]-->
 <!--[if IE]><script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/3dblog/3d_related_files/excanvas.compiled.js"></script><![endif]-->
 
-<script src="<?php echo get_template_directory_uri(); ?>/3dblog/ga.js" async="" type="text/javascript"></script>
 <script style="color: rgb(0, 0, 0);" type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/3dblog/user-controls1.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/3dblog/support.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/3dblog/latest.js"></script>

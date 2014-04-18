@@ -1,6 +1,4 @@
 
-
-		<link rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(); ?>/load/skin_minimal_dark_global.css"/>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/java/FWDGrid.js"></script>
 		
 		<style type="text/css">

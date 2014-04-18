@@ -155,7 +155,7 @@
  /* ALERT DATA-API
   * ============== */
 
-  $(document).on('click.alert.data-api', dismiss, Alert.prototype.close)
+  //$(document).on('click.alert.data-api', dismiss, Alert.prototype.close)
 
 }(window.jQuery);/* ============================================================
  * bootstrap-button.js v2.3.1
@@ -255,12 +255,12 @@
  /* BUTTON DATA-API
   * =============== */
 
-  $(document).on('click.button.data-api', '[data-toggle^=button]', function (e) {
+/*  $(document).on('click.button.data-api', '[data-toggle^=button]', function (e) {
     var $btn = $(e.target)
     if (!$btn.hasClass('btn')) $btn = $btn.closest('.btn')
     $btn.button('toggle')
   })
-
+*/
 }(window.jQuery);/* ==========================================================
  * bootstrap-carousel.js v2.3.1
  * http://twitter.github.com/bootstrap/javascript.html#carousel
@@ -452,7 +452,7 @@
  /* CAROUSEL DATA-API
   * ================= */
 
-  $(document).on('click.carousel.data-api', '[data-slide], [data-slide-to]', function (e) {
+/*  $(document).on('click.carousel.data-api', '[data-slide], [data-slide-to]', function (e) {
     var $this = $(this), href
       , $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
       , options = $.extend({}, $target.data(), $this.data())
@@ -466,7 +466,7 @@
 
     e.preventDefault()
   })
-
+*/
 }(window.jQuery);/* =============================================================
  * bootstrap-collapse.js v2.3.1
  * http://twitter.github.com/bootstrap/javascript.html#collapse
@@ -623,7 +623,7 @@
  /* COLLAPSE DATA-API
   * ================= */
 
-  $(document).on('click.collapse.data-api', '[data-toggle=collapse]', function (e) {
+/*  $(document).on('click.collapse.data-api', '[data-toggle=collapse]', function (e) {
     var $this = $(this), href
       , target = $this.attr('data-target')
         || e.preventDefault()
@@ -632,7 +632,7 @@
     $this[$(target).hasClass('in') ? 'addClass' : 'removeClass']('collapsed')
     $(target).collapse(option)
   })
-
+*/
 }(window.jQuery);/* ============================================================
  * bootstrap-dropdown.js v2.3.1
  * http://twitter.github.com/bootstrap/javascript.html#dropdowns
@@ -789,14 +789,14 @@
 
   /* APPLY TO STANDARD DROPDOWN ELEMENTS
    * =================================== */
-
+/*
   $(document)
     .on('click.dropdown.data-api', clearMenus)
     .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
     .on('click.dropdown-menu', function (e) { e.stopPropagation() })
     .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
     .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
-
+*/
 }(window.jQuery);
 /* =========================================================
  * bootstrap-modal.js v2.3.1
@@ -1029,7 +1029,7 @@
  /* MODAL DATA-API
   * ============== */
 
-  $(document).on('click.modal.data-api', '[data-toggle="modal"]', function (e) {
+/*  $(document).on('click.modal.data-api', '[data-toggle="modal"]', function (e) {
     var $this = $(this)
       , href = $this.attr('href')
       , $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) //strip for ie7
@@ -1043,7 +1043,7 @@
         $this.focus()
       })
   })
-
+*/
 }(window.jQuery);
 /* ===========================================================
  * bootstrap-tooltip.js v2.3.1
@@ -1674,13 +1674,13 @@
  /* SCROLLSPY DATA-API
   * ================== */
 
-  $(window).on('load', function () {
+/*  $(window).on('load', function () {
     $('[data-spy="scroll"]').each(function () {
       var $spy = $(this)
       $spy.scrollspy($spy.data())
     })
   })
-
+*/
 }(window.jQuery);/* ========================================================
  * bootstrap-tab.js v2.3.1
  * http://twitter.github.com/bootstrap/javascript.html#tabs
@@ -1819,11 +1819,11 @@
  /* TAB DATA-API
   * ============ */
 
-  $(document).on('click.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
+/*  $(document).on('click.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
     e.preventDefault()
     $(this).tab('show')
   })
-
+*/
 }(window.jQuery);/* =============================================================
  * bootstrap-typeahead.js v2.3.1
  * http://twitter.github.com/bootstrap/javascript.html#typeahead
@@ -2152,12 +2152,12 @@
  /* TYPEAHEAD DATA-API
   * ================== */
 
-  $(document).on('focus.typeahead.data-api', '[data-provide="typeahead"]', function (e) {
+/*  $(document).on('focus.typeahead.data-api', '[data-provide="typeahead"]', function (e) {
     var $this = $(this)
     if ($this.data('typeahead')) return
     $this.typeahead($this.data())
   })
-
+*/
 }(window.jQuery);
 /* ==========================================================
  * bootstrap-affix.js v2.3.1
@@ -2260,7 +2260,7 @@
  /* AFFIX DATA-API
   * ============== */
 
-  $(window).on('load', function () {
+/*  $(window).on('load', function () {
     $('[data-spy="affix"]').each(function () {
       var $spy = $(this)
         , data = $spy.data()
@@ -2273,7 +2273,7 @@
       $spy.affix(data)
     })
   })
-
+*/
 
 }(window.jQuery);
 /*-------------------------*/
