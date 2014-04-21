@@ -102,13 +102,14 @@ font-size:30px;
 }
 
 </style>
-<div id="wraper" class="postbyuser" style="background:white;color:Black;border-bottom:solid 2px #333333">
+<div id="wraper" class="postbyuser" style="background:#bbbbbb;color:Black;border-bottom:solid 2px #333333">
         
 <ul>
 <li class="my_post_create"><a href="<?php echo esc_url( home_url( '/' ) ); ?><?php echo myposts;?>/">My posts</a></li>
 <li class="active my_post_create"  style="float:left;padding-right:20px;padding-left:16px;"><a href="<?php echo esc_url( home_url( '/' ) ); ?><?php echo create_post;?>/" style="color:#ffffff">
 
 Add new post</a></li>
+<li style="float:left;padding-right:20px;padding-left:16px;"><a href="<?php echo esc_url( home_url( '/TimeLine' ) ); ?>" style="color: white; font-size: 30px">Back to Timeline</a></li>
 </ul>
 </div>
 
