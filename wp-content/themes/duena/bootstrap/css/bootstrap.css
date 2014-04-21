@@ -216,7 +216,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #71a08b;
+  color: #ffffff;
   text-decoration: underline;
 }
 .img-rounded {
@@ -560,6 +560,7 @@ small {
   font-size: 85%;
 }
 strong {
+  font-family: helvetica;
   font-weight: bold;
 }
 em {
@@ -1047,14 +1048,14 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: #7A4D4D;
+  border-color: #ffffff;
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
 
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,91,91,.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,91,91,.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,91,91,.6);
+  -webkit-box-shadow: inset 0 1px 1px #ffffff, 0 0 8px #ffffff;
+  -moz-box-shadow: inset 0 1px 1px #ffffff, 0 0 8px #ffffff;
+  box-shadow: inset 0 1px 1px #ffffff, 0 0 8px #ffffff;
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -1417,16 +1418,16 @@ input[type="checkbox"][readonly] {
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
-  color: #b94a48;
-  border-color: #ee5f5b;
+  color: #888888;
+  border-color: #888888;
 }
 input:focus:invalid:focus,
 textarea:focus:invalid:focus,
 select:focus:invalid:focus {
-  border-color: #e9322d;
-  -webkit-box-shadow: 0 0 6px #f8b9b7;
-  -moz-box-shadow: 0 0 6px #f8b9b7;
-  box-shadow: 0 0 6px #f8b9b7;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 6px #ffffff;
+  -moz-box-shadow: 0 0 6px #ffffff;
+  box-shadow: 0 0 6px #ffffff;
 }
 .form-actions {
   padding: 19px 20px 20px;

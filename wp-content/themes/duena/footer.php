@@ -59,7 +59,7 @@
 <!-- .page-wrapper -->
 <div id="contact_form" class="contact_form popup_gradient">
 <div class="inside_div">
-	<h2><strong>Contact</strong></h2>
+	<h2><strong style="font-family: helvetica;">Contact</strong></h2>
 </div><div style="padding-top: 10px;"><div style="text-align:center"><span id="contact_error"></span></div>
 <form action="#" name="gcf" id="gcf">
 		  <div class="gcf_title"> <span id="gcf_alertmessage"></span> </div>

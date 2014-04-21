@@ -61,11 +61,11 @@ get_header(); ?>
 </div><div style="text-align: center;padding-top: 10px;"><span id=register_error></span>
           <form action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" class="user_new" id="user_new" method="post">
 		<div class=" gcf_title1">                 
-		<input id="user_login" name="user_login"  type="text" placeholder="Select a username" required=required></div>
+		<input style="margin-left: -8px;" id="user_login" name="user_login"  type="text" placeholder="Select a username" required=required></div>
 		<div class=" gcf_title1">      
-                 <input id="user_email" name="user_email"  type="text" placeholder="Email address" required=required></div>
-		 <div class=" gcf_title1">      <input id="first_name" name="first_name"  type="text" placeholder="First name" required=required></div>
-		 <div class=" gcf_title1">      <input id="last_name" name="last_name"  type="text" placeholder="Last name" required=required></div>
+                 <input style="margin-left: -8px;" id="user_email" name="user_email"  type="text" placeholder="Email address" required=required></div>
+		 <div class=" gcf_title1">      <input style="margin-left: -8px;" id="first_name" name="first_name"  type="text" placeholder="First name" required=required></div>
+		 <div class=" gcf_title1">      <input style="margin-left: -8px;" id="last_name" name="last_name"  type="text" placeholder="Last name" required=required></div>
                  <?php do_action('register_form'); ?>
 		
                 <input id="register" type="submit" value="Sign up">
