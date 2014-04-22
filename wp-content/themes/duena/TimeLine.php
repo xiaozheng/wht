@@ -296,7 +296,7 @@ bottom:28px;
 				</div>
 				<div class="tl-cpiv-content-mask">
 					<div class="tl-cpiv-content-mask-inner"></div>
-					<a href="http://www.tiki-toki.com/timeline/entry/43/Beautiful-web-based-timeline-software/#"></a>
+					<a href="/"></a>
 				</div>
 			</div>
 		</div>
