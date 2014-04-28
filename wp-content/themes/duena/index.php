@@ -27,7 +27,7 @@ get_header(); ?>
 <div class="LoginForm popup_gradient" id="LoginForm">
 
      <div id="sign_in"><div class="inside_div">
-        <h2><strong>Login</strong></h2>
+        <h2><strong>Login 登录</strong></h2>
 </div><div style="padding-top: 10px; text-align:center"><span id="login_error"></span></div>
         <?php $args = array( 
               'echo'           => true,
@@ -47,7 +47,7 @@ get_header(); ?>
 
         wp_login_form( $args );?>
 <div class="clear"></div>
-       <p class="forgot_password_link" style=""><a href="#lost_password"  onclick="return forgot_password();">Forgot your password?</a></p>
+       <p class="forgot_password_link" style=""><a href="#lost_password"  onclick="return forgot_password();">Forgot your password? </br>忘记登录信息吗？</a></p>
 	<!--<p>Don't have an account? <a href="#sign_up" >Sign up</a>!</p>-->
 
 </div>
@@ -57,22 +57,24 @@ get_header(); ?>
 
 <div class="Register popup_gradient" id="Register">
       <div id="sign_up" ><div class="inside_div">
-          <h2><strong>Register</strong></h2>
+          <h2><strong>Register 注册</strong></h2>
 </div><div style="text-align: center;padding-top: 10px;"><span id=register_error></span>
           <form action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" class="user_new" id="user_new" method="post">
 		<div class=" gcf_title1">                 
-		<input style="margin-left: -8px;" id="user_login" name="user_login"  type="text" placeholder="Select a username" required=required></div>
+		<input style="margin-left: -8px;" id="user_login" name="user_login"  type="text" placeholder="Username 用户名" required=required></div>
 		<div class=" gcf_title1">      
-                 <input style="margin-left: -8px;" id="user_email" name="user_email"  type="text" placeholder="Email address" required=required></div>
-		 <div class=" gcf_title1">      <input style="margin-left: -8px;" id="first_name" name="first_name"  type="text" placeholder="First name" required=required></div>
-		 <div class=" gcf_title1">      <input style="margin-left: -8px;" id="last_name" name="last_name"  type="text" placeholder="Last name" required=required></div>
+                 <input style="margin-left: -8px;" id="user_email" name="user_email"  type="text" placeholder="Email 邮箱" required=required></div>
+		 <div class=" gcf_title1">      <input style="margin-left: -8px;" id="first_name" name="first_name"  type="text" placeholder="First Name 名" required=required></div>
+		 <div class=" gcf_title1">      <input style="margin-left: -8px;" id="last_name" name="last_name"  type="text" placeholder="Last Name 姓" required=required></div>
                  <?php do_action('register_form'); ?>
 		
-                <input id="register" type="submit" value="Sign up">
+                <!--<input id="register" type="submit" value="Regsiter 注册">-->
 		<div class="clear"></div>
-	<p>A password will be E-mailed to you</p><br>
-	  <p><input type="checkbox" name="agrrement" required=required id="check_box_pos"  >
-	     <span  id="terms_condition" >I agree to terms & conditions</span></p>
+	<p style="text-align: left; margin-left: 10px;">Upone receiving the account approval email, please set your password using the "forgotten password" link on the login form. </br> 请在收到帐户批准邮件后及时通过登录页面的“遗忘密码”来设置您自己的密码。</p><br>
+	  <p><input type="checkbox" name="agrrement" required=required id="check_box_pos" >
+	     <span  id="terms_condition" style="text-decoration: underline">I agree to Terms & Conditions </br> 我同意本网站的条款和规定</span></p>
+
+   <input id="register" type="submit" value="Regsiter 注册">
 </div>
           </form>
           

@@ -38,7 +38,7 @@
 					fullScreenButtonPosition:"bottomright",
 					fullScreenButtonVerticalMargins:100,
 					//thumbnails settings
-					thumbnailBaseWidth:278,
+					thumbnailBaseWidth:188,
 					thumbnailBaseHeight:188,
 					nrOfThumbsToShowOnSet:37,
 					horizontalSpaceBetweenThumbnails:4,
@@ -89,7 +89,6 @@
 					lightBoxBorderSize:4,
 					lightBoxBorderRadius:4,
 					lightBoxSlideShowDelay:4,
-					
     
 				});
 			})
