@@ -70,7 +70,7 @@ get_header(); ?>
 		
                 <!--<input id="register" type="submit" value="Regsiter 注册">-->
 		<div class="clear"></div>
-	<p style="text-align: left; margin-left: 10px;">Upone receiving the account approval email, please set your password using the "forgotten password" link on the login form. </br> 请在收到帐户批准邮件后及时通过登录页面的“遗忘密码”来设置您自己的密码。</p><br>
+	<p style="text-align: justify; margin-left: 10px; margin-right: 10px">Please be patient with the approval email. 请耐心等待批准确认邮件。</p><br>
 	  <p><input type="checkbox" name="agrrement" required=required id="check_box_pos" >
 	     <span  id="terms_condition" style="text-decoration: underline">I agree to Terms & Conditions </br> 我同意本网站的条款和规定</span></p>
 

@@ -16,8 +16,8 @@ get_header(); ?>
 		        <h2><?php _e( 'Page Not Found', 'duena' ); ?></h2>
 		      </hgroup>
 		      <h6><?php _e( 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'duena' ); ?></h6>
-		      <p><?php _e( 'Please try using our search box below to look for information on the internet.', 'duena' ); ?></p>
-		      <?php get_search_form(); /* outputs the default Wordpress search form */ ?>
+		     <!-- <p><?php _e( 'Please try using our search box below to look for information on the internet.', 'duena' ); ?></p>
+		      <?php get_search_form(); /* outputs the default Wordpress search form */ ?>-->
 		    </div>
 		</div>
 	</div><!-- #primary -->
