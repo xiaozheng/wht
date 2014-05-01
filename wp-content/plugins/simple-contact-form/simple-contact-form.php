@@ -24,15 +24,15 @@ function gCF()
 		?>
 		<form action="#" name="gcf" id="gcf">
 		  <div class="gcf_title"> <span id="gcf_alertmessage"></span> </div>
-		  <div class="gcf_title"> Your name </div>
+		  <div class="gcf_title"> Name 姓名 </div>
 		  <div class="gcf_title">
 			<input name="gcf_name" class="gcftextbox" type="text" id="gcf_name" maxlength="120">
 		  </div>
-		  <div class="gcf_title"> Your email </div>
+		  <div class="gcf_title"> Email 邮箱</div>
 		  <div class="gcf_title">
 			<input name="gcf_email" class="gcftextbox" type="text" id="gcf_email" maxlength="120">
 		  </div>
-		  <div class="gcf_title"> Enter your message </div>
+		  <div class="gcf_title"> Enter message 信息</div>
 		  <div class="gcf_title">
 			<textarea name="gcf_message" class="gcftextarea" rows="3" id="gcf_message"></textarea>
 		  </div>
@@ -44,7 +44,7 @@ function gCF()
 		  	<img src="<?php echo get_option('siteurl'); ?>/wp-content/plugins/simple-contact-form/captcha.php?width=100&height=30&characters=5" />
 		  </div>
 		  <div class="gcf_title">
-			<input type="button" name="button" value="Submit" onclick="javascript:gcf_submit(this.parentNode,'<?php echo get_option('siteurl'); ?>/wp-content/plugins/simple-contact-form/');">
+			<input type="button" name="button" value="Submit 提交" onclick="javascript:gcf_submit(this.parentNode,'<?php echo get_option('siteurl'); ?>/wp-content/plugins/simple-contact-form/');">
 		  </div>
           <div class="gcf_title"></div>
 		</form>

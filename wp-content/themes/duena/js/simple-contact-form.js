@@ -100,26 +100,26 @@ function gcf_submit1(obj,url)
 	
 	if(_n.value=="")
 	{
-		alert("Please enter the name.");
+		alert("Please enter the name 请输入姓名");
 		_n.focus();
 		return false;    
 	}
 	else if(_e.value=="")
 	{
-		alert("Please enter the email address.");
+		alert("Please enter the email address 请输入邮箱");
 		_e.focus();
 		return false;    
 	}
 	else if(_e.value!="" && (_e.value.indexOf("@",0)==-1 || _e.value.indexOf(".",0)==-1))
 	{
-		alert("Please enter valid email.")
+		alert("Please enter valid email 请输入有效邮箱")
 		_e.focus();
 		_e.select();
 		return false;
 	} 
 	else if(_m.value=="")
 	{
-		alert("Please enter your message.");
+		alert("Please enter your message 请输入留言");
 		_m.focus();
 		return false;    
 	}

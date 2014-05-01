@@ -13,14 +13,14 @@
 
 
       <div id="lost_password" class="modal disply_effect">
-           <span >Get new password on your registered email-id</span><button class='close_button' id="forgot_password_close">x</button><br/><br/>
+           <span ></br></br>Password reset URL will be sent to your registered email address</br> 密码重置链接会发送您注册的邮箱</span><button class='close_button' id="forgot_password_close">x</button><br/><br/>
 	    <div id="lostPassw_error" ></div>
            <form name="lostpasswordform" id="lostpasswordform" action="<?php echo home_url()?>/wp-login.php?action=lostpassword" method="post">
-              <input type="text" name="user_login" id="lost_user_login" class="input" value="" size="20" placeholder="username or email-id">
+              <input type="text" name="user_login" id="lost_user_login" class="input" value="" size="60" placeholder="Enter Registered Email Address  输入注册邮箱">
 
               <input type="hidden" name="redirect_to" value="<?php echo home_url();?>">
 		<br/>
-              <input type="submit" name="wp-submit" id="wp-submit" value="Get New Password">
+              <input type="submit" name="wp-submit" id="wp-submit" value="Reset Password 重置密码">
           </form>
           
     </div>
@@ -59,25 +59,25 @@
 <!-- .page-wrapper -->
 <div id="contact_form" class="contact_form popup_gradient">
 <div class="inside_div">
-	<h2><strong style="font-family: helvetica;">Contact</strong></h2>
+	<h2><strong style="font-family: helvetica;">Contact 联系</strong></h2>
 </div><div style="padding-top: 10px;"><div style="text-align:center"><span id="contact_error"></span></div>
 <form action="#" name="gcf" id="gcf">
 		  <div class="gcf_title"> <span id="gcf_alertmessage"></span> </div>
 		  <!--<div class="gcf_title"> Your name </div>-->
 		  <div class="gcf_title gcf_title1">
-			<input name="gcf_name" class="gcftextbox" type="text" id="gcf_name" maxlength="120" placeholder="Your name">
+			<input name="gcf_name" class="gcftextbox" type="text" id="gcf_name" maxlength="120" placeholder="Name 姓名">
 		  </div>
 		  <!--<div class="gcf_title"> Your email </div>-->
 		  <div class="gcf_title gcf_title1">
-			<input name="gcf_email" class="gcftextbox" type="text" id="gcf_email" maxlength="120" placeholder='Your email'>
+			<input name="gcf_email" class="gcftextbox" type="text" id="gcf_email" maxlength="120" placeholder='Email 邮箱'>
 		  </div>
 		 <!-- <div class="gcf_title"> Enter your message </div>-->
 		  <div class="gcf_title ">
-			<textarea name="gcf_message" class="gcftextarea" rows="3" id="gcf_message" placeholder='Enter your message'></textarea>
+			<textarea name="gcf_message" class="gcftextarea" rows="3" id="gcf_message" placeholder='Enter Message 留言'></textarea>
 		  </div>
 		 
 		  <div class="gcf_title " style="float:right;">
-			<input type="button" class="button_a" name="button" value="Submit" onclick="javascript:gcf_submit(this.parentNode,'<?php echo get_option('siteurl'); ?>/wp-content/plugins/simple-contact-form/');">
+			<input type="button" class="button_a" name="button" value="Submit 提交" onclick="javascript:gcf_submit(this.parentNode,'<?php echo get_option('siteurl'); ?>/wp-content/plugins/simple-contact-form/');">
 		  </div>
           <div class="gcf_title"></div>
 		</form>
@@ -120,8 +120,8 @@ $jq('#topnav a').click(function(e){
 	$jq('#user_pass').attr('required','required');
 	
 	
-	$jq('#user_login').attr( 'placeholder', 'Username' );
-	$jq('#user_pass').attr( 'placeholder', 'Password' );
+	$jq('#user_login').attr( 'placeholder', 'Username 用户名' );
+	$jq('#user_pass').attr( 'placeholder', 'Password 密码' );
 	$jq('.login-remember').hide();
 	$jq("#menu-item-15").html('<?php wp_loginout( esc_url( home_url( '/' ) )); ?>');//logout
 	$jq('<button></button>',{
@@ -152,7 +152,7 @@ $jq('#topnav a').click(function(e){
 		}
 		 if(_e.value !="" && (_e.value.indexOf("@",0)==-1 || _e.value.indexOf(".",0)==-1))
 		{
-		$lostPassw_error.html("Enter Valid  EmailId");
+		$lostPassw_error.html("Enter Registered Email Address 输入注册邮箱");
 		_e.focus();
 		_e.select();
 		return false;

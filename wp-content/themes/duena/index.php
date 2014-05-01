@@ -36,7 +36,7 @@ get_header(); ?>
               'label_username' => __( '' ),
               'label_password' => __( '' ),
               /*'label_remember' => __( 'Remember Me' ),*/
-              'label_log_in'   => __( 'Sign In' ),
+              'label_log_in'   => __( 'Sign In 登录' ),
               'id_username'    => 'user_login',
               'id_password'    => 'user_pass',
               /*'id_remember'    => 'rememberme',*/

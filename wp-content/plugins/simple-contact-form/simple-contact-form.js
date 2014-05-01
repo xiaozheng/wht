@@ -105,21 +105,21 @@ function gcf_submit(obj,url)
 	if(_n.value=="")
 	{
 		//alert("Please enter the name.");
-		_c_error.innerHTML="Please enter the name.";
+		_c_error.innerHTML="Please enter name 请输入姓名";
 		_n.focus();
 		return false;    
 	}
 	else if(_e.value=="")
 	{
 		//alert("Please enter the email address.");
-		_c_error.innerHTML="Please enter the email address.";
+		_c_error.innerHTML="Please enter email 请输入邮箱";
 		_e.focus();
 		return false;    
 	}
 	else if(_e.value!="" && (_e.value.indexOf("@",0)==-1 || _e.value.indexOf(".",0)==-1))
 	{
 		//alert("Please enter valid email.")
-		_c_error.innerHTML="Please enter valid email.";
+		_c_error.innerHTML="Please enter valid email 请输入有效邮箱";
 		_e.focus();
 		_e.select();
 		return false;
@@ -127,7 +127,7 @@ function gcf_submit(obj,url)
 	else if(_m.value=="")
 	{
 		//alert("Please enter your message.");
-		_c_error.innerHTML="Please enter your message.";
+		_c_error.innerHTML="Please enter message 请输入留言";
 		_m.focus();
 		return false;    
 	}
