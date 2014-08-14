@@ -256,6 +256,8 @@ if ($cindex == 0){
 			$json['stories'][0]['media'] = array();
 			$json['stories'][0]['startDate'] = date('Y-m-d H:i:s', strtotime($main_post->post_date));
 			$json['stories'][0]['endDate'] = date('Y-m-d H:i:s', strtotime($main_post->post_date));
+			$json['stories'][0]['authorID'] = $main_post->post_author;
+			$json['stories'][0]['authorName'] = get_the_author_meta( 'display_name', $main_post->post_author );
 			
 			$json['events'][0]['icon'] ="circle_green.png";
 			$post_categories = wp_get_post_categories( $main_post->ID);	
@@ -396,6 +398,9 @@ if ($cindex == 0){
 						}
 					
 				}
+				$json['stories'][$i]['authorID'] = $post->post_author;
+				$json['stories'][$i]['authorName'] = get_the_author_meta( 'display_name', $post->post_author );
+
 				//$json['stories'][$i]['category']=$post->$category_id;		      		
 				if (current_user_can('edit_post',$post->ID)){
 					$json['stories'][$i]['edit_post']=true;
