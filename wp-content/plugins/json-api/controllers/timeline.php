@@ -236,7 +236,7 @@ if ($cindex == 0){
 	if(!$post_type) $post_type = 'post';
 	if(!$amount) $amount = -1;
 
-	$posts = get_posts(array('post_type' => $post_type, 'numberposts' => $amount, 'category' => $category_id, 'orderby' => 			'post_date','order' => 'DESC'));
+	$posts = get_posts(array('post_type' => $post_type, 'numberposts' => $amount, 'category' => $category_id, 'orderby' => 			'post_date','order' => 'DESC', 'post_status' => array('publish', 'future')));
 
 		if($main_post_id) $main_post = get_post($main_post_id);
 		else  {
