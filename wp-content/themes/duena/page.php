@@ -35,16 +35,25 @@ get_header(); ?>
 					</div>
 					
 
-				<?php endwhile; // end of the loop. 			
+					 <?php endwhile; // end of the loop. 			
 					}else if(is_page("gallery")){
 					include('Gallery.php');
 				 
+					}else if(is_page("home")){
+					 while ( have_posts() ) : the_post(); ?>
+                                        <div class="about_info">
+
+                                                <?php the_content(); ?>
+                                        </div>
+
+
+                                         <?php endwhile; // end of the loop.
 
  					}else {
 					}
 				
-					}else if (is_page('TimeLine'))
-					{
+			        }else if (is_page('TimeLine'))
+				{
 					
 					include('TimeLine.php');
 				}
